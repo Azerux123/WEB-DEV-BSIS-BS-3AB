@@ -83,6 +83,15 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  #hamburger-nav .hamburger-icon{
+  display: none;
+  }
+
+  #hamburger-nav .logo{
+    display: flex;
+    padding-left: 30%;
+  }
   .body{
     margin: 0;
   }
@@ -92,15 +101,23 @@
   }
 
   #profile {
+    position: relative;
     height: 83vh;
     margin-bottom: 0;
   }
 
   #profile .section_pic-3{
-    display: flex;
-    align-items: l;
+    position: absolute;
+    align-items: center;
     height: 50%;
     max-width: 50%;
+    right: 45%;
+  }
+
+  .section__text{
+    position: absolute;
+    top: 60%;
+    right: 1rem;
   }
 
   #profile .btn-container{
