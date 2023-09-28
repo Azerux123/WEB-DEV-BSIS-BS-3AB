@@ -28,11 +28,16 @@
     display: block;
   }
 
-  .section_pic-3{
-    display: absolute;
-    float: center;
-    align-items: center;
+  #profile .section_pic-3{
+   display: flex;
+   align-content: center;
+   height: 65%;
   }
+
+  #profile .btn-container{
+  align-items: center;
+  }
+
   .arrow {
     display: none;
   }
@@ -74,13 +79,13 @@
   .section__text{
     padding-bottom: 25%;
   }
-.btn-container{
-  align-items: center;
-}
 
 }
 
 @media screen and (max-width: 600px) {
+  .body{
+    margin: 0;
+  }
   #contact,
   footer {
     height: 40vh;
@@ -89,6 +94,19 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+
+  #profile .section_pic-3{
+    display: flex;
+    align-items: l;
+    height: 50%;
+    max-width: 50%;
+  }
+
+  #profile .btn-container{
+    display: flex;
+    align-items: center;
+    
   }
 
   article {
